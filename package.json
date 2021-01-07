@@ -1,0 +1,34 @@
+{
+  "name": "piratesofthegalaxy",
+  "version": "1.0.0",
+  "description": "A project by Literacy Pirates for the children to record a description of a planet.",
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bounce.js": "^0.8.2",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalpaitch/pirates-of-the-galaxy.git"
+  },
+  "keywords": [
+    "literacy",
+    "pirates"
+  ],
+  "author": "andrew@kalpaitch.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalpaitch/pirates-of-the-galaxy/issues"
+  },
+  "homepage": "https://github.com/kalpaitch/pirates-of-the-galaxy#readme"
+}
