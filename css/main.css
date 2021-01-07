@@ -143,7 +143,7 @@ textarea {
   height: 100%;
 }
 
-#planets .video {
+#buildings .video {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -157,7 +157,7 @@ textarea {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-#planets .container {
+#buildings .container {
   position: relative;
   z-index: 2;
 }
@@ -168,35 +168,35 @@ textarea {
   margin-bottom: 70px;
 }
 
-.planet {
-  background: url(../img/planets.png);
+.building {
+  background: url(../img/buildings.png);
   display: block;
   position: relative;
   margin: 0 auto;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 220px;
   cursor: pointer;
 }
-.planet.active {
+.building.active {
   animation: animation 1600ms linear both;
 }
-.planet .name {
+.building .name {
   font-family: aviano-future, sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 1.333em;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
-  padding-top: 175px;
+  padding-top: 285px;
   margin-bottom: 0;
 }
-.planet.active .name {
+.building.active .name {
   padding-top: 210px;
 }
-.planet .title {
+.building .title {
   font-family: aviano-future, sans-serif;
   font-weight: 500;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 
@@ -205,139 +205,88 @@ audio.story {
   margin: 0 auto;
 }
 
-.planet-pk1 {
+.building-r1b1 {
   background-position: 0 0;
   margin-top: 130px;
 }
-.planet-pk2 {
-  background-position: 0 -200px;
+.building-r1b2 {
+  background-position: 0 -220px;
   margin-top: 10px;
 }
-.planet-pk3 {
-  background-position: 0 -400px;
+.building-r1b3 {
+  background-position: 0 -440px;
   margin-top: 110px;
 }
-.planet-pk4 {
-  background-position: 0 -600px;
+.building-r1b4 {
+  background-position: 0 -660px;
   margin-top: 250px;
 }
 
-.planet-pr1 {
+.building-r2b1 {
   background-position: -200px 0;
   margin-top: 130px;
 }
-.planet-pr2 {
+.building-r2b2 {
   background-position: -200px -200px;
   margin-top: 10px;
 }
-.planet-pr3 {
+.building-r2b3 {
   background-position: -200px -400px;
   margin-top: 110px;
 }
-.planet-pr4 {
+.building-r2b4 {
   background-position: -200px -600px;
   margin-top: 250px;
 }
 
-.planet-b1 {
+.building-r3b1 {
   background-position: -400px 0;
   margin-top: 30px;
 }
-.planet-b2 {
+.building-r3b2 {
   background-position: -400px -200px;
   margin-top: 10px;
 }
-.planet-b3 {
+.building-r3b3 {
   background-position: -400px -400px;
   margin-top: 110px;
 }
-.planet-b4 {
+.building-r3b4 {
   background-position: -400px -600px;
   margin-top: 250px;
 }
 
-.planet-t1 {
+.building-r4b1 {
   background-position: -600px 0;
   margin-top: 130px;
 }
-.planet-t2 {
+.building-r4b2 {
   background-position: -600px -200px;
   margin-top: 10px;
 }
-.planet-t3 {
+.building-r4b3 {
   background-position: -600px -400px;
   margin-top: 110px;
 }
-.planet-t4 {
+.building-r4b4 {
   background-position: -600px -600px;
   margin-top: 250px;
 }
 
-.planet-g1 {
+.building-r5b1 {
   background-position: -800px 0;
   margin-top: 130px;
 }
-.planet-g2 {
+.building-r5b2 {
   background-position: -800px -200px;
   margin-top: 10px;
 }
-.planet-g3 {
+.building-r5b3 {
   background-position: -800px -400px;
   margin-top: 110px;
 }
-.planet-g4 {
+.building-r5b6 {
   background-position: -800px -600px;
-  margin-top: 250px;
-}
-
-.planet-y1 {
-  background-position: -1000px 0;
-  margin-top: 130px;
-}
-.planet-y2 {
-  background-position: -1000px -200px;
-  margin-top: 10px;
-}
-.planet-y3 {
-  background-position: -1000px -400px;
-  margin-top: 110px;
-}
-.planet-y4 {
-  background-position: -1000px -600px;
-  margin-top: 250px;
-}
-
-.planet-o1 {
-  background-position: -1200px 0;
-  margin-top: 130px;
-}
-.planet-o2 {
-  background-position: -1200px -200px;
-  margin-top: 10px;
-}
-.planet-o3 {
-  background-position: -1200px -400px;
-  margin-top: 110px;
-}
-.planet-o4 {
-  background-position: -1200px -600px;
-  margin-top: 250px;
-}
-
-.planet-r1 {
-  background-position: -1400px 0;
-  margin-top: 130px;
-}
-.planet-r2 {
-  background-position: -1400px -200px;
-  margin-top: 10px;
-}
-.planet-r3 {
-  background-position: -1400px -400px;
-  margin-top: 110px;
-}
-.planet-r4 {
-  background-position: -1400px -600px;
   margin-top: 250px;
 }
 
