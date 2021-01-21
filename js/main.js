@@ -1,3 +1,4 @@
+let qsRegex;
 const isotopeOptions = {
     itemSelector: '.grid-item',
     percentPosition: true,
@@ -8,8 +9,25 @@ const isotopeOptions = {
 let grid = document.querySelector('.flex-grid');
 const container = new Isotope(grid, isotopeOptions);
 
+document.querySelector('.quicksearch').addEventListener( 'change', function( event ) {
+    // Only work with inputs.
+    if ( !matchesSelector( event.target, 'input' ) ) {
+        return;
+    }
+    qsRegex = new RegExp( this.value, 'gi' );
+    container.arrange({
+        filter: function( index, itemElem ) {
+            var name = itemElem.querySelector('.name').innerText;
+            var title = itemElem.querySelector('.title').innerText;
+
+            return qsRegex ? name.match(qsRegex) || title.match(qsRegex) : true;
+        }
+    });
+});
+
+
 function playStory(element, e) {
-    const planetElements = document.getElementsByClassName('planet');
+    const planetElements = document.getElementsByClassName('building');
     const audioElements = document.getElementsByTagName('audio');
     const audio = document.getElementById(element);
 
@@ -47,7 +65,7 @@ function playStory(element, e) {
     container.reloadItems()
 }
 
-let elements = document.getElementsByClassName("planet");
+let elements = document.getElementsByClassName("building");
 for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener('click', (e) => {
         let el = e.currentTarget.getAttribute('data-action')
