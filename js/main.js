@@ -9,11 +9,13 @@ const isotopeOptions = {
 let grid = document.querySelector('.flex-grid');
 const container = new Isotope(grid, isotopeOptions);
 
+// Filter based on changed search terms.
 document.querySelector('.quicksearch').addEventListener( 'change', function( event ) {
     // Only work with inputs.
     if ( !matchesSelector( event.target, 'input' ) ) {
         return;
     }
+    console.log('Filtering by search');
     qsRegex = new RegExp( this.value, 'gi' );
     container.arrange({
         filter: function( index, itemElem ) {
@@ -23,6 +25,35 @@ document.querySelector('.quicksearch').addEventListener( 'change', function( eve
             return qsRegex ? name.match(qsRegex) || title.match(qsRegex) : true;
         }
     });
+});
+// Filter based on re-submitted search terms.
+document.querySelector('.filter-group').addEventListener( 'click', function( event ) {
+    // Only work with inputs.
+    if ( !matchesSelector( event.target, 'button.search-button' ) ) {
+        return;
+    }
+    console.log('Filtering by search');
+    let searchValue = document.getElementById('quicksearch').value;
+    qsRegex = new RegExp( searchValue, 'gi' );
+    container.arrange({
+        filter: function( index, itemElem ) {
+            var name = itemElem.querySelector('.name').innerText;
+            var title = itemElem.querySelector('.title').innerText;
+
+            return qsRegex ? name.match(qsRegex) || title.match(qsRegex) : true;
+        }
+    });
+});
+
+// Filter based on category.
+document.querySelector('.filter-group').addEventListener( 'click', function( event ) {
+    // Only work with explicitly labelled filter buttons.
+    if ( !matchesSelector( event.target, 'button.filter-button' ) ) {
+        return;
+    }
+    console.log('Filtering by group');
+    let filterValue = event.target.getAttribute('data-filter');
+    container.arrange({ filter: filterValue });
 });
 
 
