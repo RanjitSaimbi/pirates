@@ -138,6 +138,9 @@ input.transparent-input{
   font-weight: 700;
   font-style: italic;
 }
+#page-top {
+  background: rgba(255, 255, 255, 0.75);
+}
 .background-container {
   position: relative;
 }
@@ -165,7 +168,7 @@ input.transparent-input{
 }
 .background-container .sky {
   z-index: -11;
-  background: rgba(0,0,0,0.5);
+  opacity: 0.75;
 }
 .background-container .city {
   z-index: -10;
@@ -215,12 +218,12 @@ input.transparent-input{
 }
 .story.active .name {
   padding-top: 210px;
-  color: #ffffff;
+  color: #000000;
 }
 .story .title {
   font-family: aviano-future, sans-serif;
   font-weight: 500;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 
