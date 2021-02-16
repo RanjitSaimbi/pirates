@@ -33,11 +33,11 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <header>
+  <header class="fixed-top">
     <div class="navbar navbar-light bg-light shadow-sm">
       <div class="container d-flex justify-content-between">
 
-        <h1 class="page-heading">Imagining New Worlds</h1>
+        <h1 class="h3 page-heading">Imagining New Worlds</h1>
 
         <a href="http://www.hackneypirates.org/" class="navbar-brand">
           <img alt="Literacy Pirates" src="/img/lp_logo.png" height="42px" width="auto" class="brand-logo hidden-xs-down">
@@ -47,26 +47,21 @@
   </header>
 
   <main role="main">
-
-    <section class="container text-center">
-      <br><br>
-
-      <div class="row">
-        <div class="col-sm">
-          <p class="mb-3">Nam quis nulla sodales, sagittis elit a, tincidunt eros. Mauris dignissim varius luctus. Sed non dolor ex. Aenean nec enim enim. Vivamus tincidunt sed massa vitae mattis. Suspendisse odio metus, fringilla non arcu at, laoreet egestas lectus. In sit amet erat dictum, efficitur ante a, consectetur magna.</p>
-          <footer class="blockquote-footer">XXXX, <cite title="Source Title">Director of Learning</cite></footer>
+    <div class="container-fluid bg-white pt-5">
+      <section class="container text-center py-5">
+        <div class="row">
+          <div class="col-sm">
+            <p class="mb-3">Nam quis nulla sodales, sagittis elit a, tincidunt eros. Mauris dignissim varius luctus. Sed non dolor ex. Aenean nec enim enim. Vivamus tincidunt sed massa vitae mattis. Suspendisse odio metus, fringilla non arcu at, laoreet egestas lectus. In sit amet erat dictum, efficitur ante a, consectetur magna.</p>
+            <footer class="blockquote-footer">XXXX, <cite title="Source Title">Director of Learning</cite></footer>
+          </div>
+          <div class="col-sm">
+            <p class="mb-3">Nam ex quam, suscipit sed malesuada eget, cursus non quam. Integer ac facilisis tortor. Vestibulum congue scelerisque arcu ac volutpat. Fusce id ornare lectus. Suspendisse potenti. Integer turpis mauris, mollis quis dapibus ac, eleifend eu metus. Integer malesuada ipsum ornare erat lacinia, sed cursus purus iaculis. Fusce sed nunc luctus, porttitor est ut, faucibus est.</p>
+            <footer class="blockquote-footer">XXXX, <cite title="Source Title">Young Pirate</cite></footer>
+          </div>
         </div>
-        <div class="col-sm">
-          <p class="mb-3">Nam ex quam, suscipit sed malesuada eget, cursus non quam. Integer ac facilisis tortor. Vestibulum congue scelerisque arcu ac volutpat. Fusce id ornare lectus. Suspendisse potenti. Integer turpis mauris, mollis quis dapibus ac, eleifend eu metus. Integer malesuada ipsum ornare erat lacinia, sed cursus purus iaculis. Fusce sed nunc luctus, porttitor est ut, faucibus est.</p>
-          <footer class="blockquote-footer">XXXX, <cite title="Source Title">Young Pirate</cite></footer>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <div id="buildings" class="album py-5">
-      <img src="img/cityscape.jpeg" alt="background" class="video"/>
-
-      <div class="container filter-group">
+      <section class="container filter-group pb-2">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <button class="filter-button btn btn-outline-secondary" type="button" data-filter="*">All</button>
@@ -78,67 +73,326 @@
             <button class="search-button btn btn-outline-secondary" type="button">Find</button>
           </div>
         </div>
-      </div>
-
-      <div class="container flex-grid">
-        <div class="grid-sizer"></div>
-
-        <div class="grid-item young">
-          <a data-action="xxxx-story" class="building building-r1b1">
-            <p class="name">First Name</p>
-            <p class="title">Story Title</p>
-          </a>
-
-          <audio class="story" id="xxxx-story">
-            <source src="audio/AudioFile.webm">
-            <source src="audio/AudioFile.mp3">
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-
-        <div class="grid-item young">
-          <a data-action="xxxx-story" class="building building-r1b2">
-            <p class="name">Second</p>
-            <p class="title">Story Title</p>
-          </a>
-
-          <audio class="story" id="xxxx-story">
-            <source src="audio/AudioFile.webm">
-            <source src="audio/AudioFile.mp3">
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-
-        <div class="grid-item senior">
-          <a data-action="xxxx-story" class="building building-r1b3">
-            <p class="name">Third Name</p>
-            <p class="title">Story Title</p>
-          </a>
-
-          <audio class="story" id="xxxx-story">
-            <source src="audio/AudioFile.webm">
-            <source src="audio/AudioFile.mp3">
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-      </div>
+      </section>
     </div>
 
-    <div class="container">
-      <div class="alert alert-light" role="alert">
-        Check out the <a href="http://www.hackneypirates.org/writing-challenge" class="alert-link" target="_blank">Literacy Pirates Writing Challenge</a>.
+    <div id="stories" class="container-fluid py-2 text-white background-container">
+      <img src="img/london-city.png" alt="Background city" class="background city"/>
+      <video autoplay="" muted="" loop="" class="background sky">
+        <source src="img/bg_sky.mp4" type="video/mp4">
+      </video>
+
+      <div class="flex-grid container">
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story car car-r1c1">
+            <p class="name">Jane</p>
+            <p class="title">London Burning</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story car car-r1c2">
+            <p class="name">Bob</p>
+            <p class="title">On my own</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story car car-r1c3">
+            <p class="name">Enrique</p>
+            <p class="title">Iguanas</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story car car-r1c4">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story car car-r1c5">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story car car-r3c1">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story car car-r3c2">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story car car-r3c3">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story car car-r3c4">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story car car-r3c5">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r1c1">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r1c2">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r1c3">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r1c6">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r3c1">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r3c2">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r3c3">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r3c4">
+            <p class="name">Shane</p>
+            <p class="title">Bed time</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r3c5">
+            <p class="name">Anna</p>
+            <p class="title">Fair tales</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item senior relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r3c6">
+            <p class="name">Alice</p>
+            <p class="title">Defending London</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item senior relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r2c4">
+            <p class="name">Micaela</p>
+            <p class="title">Open up</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item senior relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r2c2">
+            <p class="name">Geneviève</p>
+            <p class="title">After closing</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="grid-item young relaxx">
+          <a data-action="xxxx-story" class="story rocket rocket-r2c3">
+            <p class="name">Liam</p>
+            <p class="title">Simultaneous</p>
+          </a>
+
+          <audio class="audio" id="xxxx-story">
+            <source src="audio/AudioFile.webm">
+            <source src="audio/AudioFile.mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
-      </div>
-      <br>
     </div>
   </main>
 
-  <footer class="text-muted text-light">
+  <footer class="text-muted bg-light text-light">
     <div class="container">
+      <br>
+      <p>Check out the <a href="http://www.hackneypirates.org/writing-challenge" class="alert-link" target="_blank">Literacy Pirates Writing Challenge</a></p>
       <p class="float-right">
         <a href="#">Back to top</a>
       </p>
-      <p>Imagining New Worlds is &copy; <a href="http://www.hackneypirates.org/">Literary Pirates</a> 2020</p>
+      <p>Imagining New Worlds &copy; <a href="http://www.hackneypirates.org/">Literary Pirates</a> 2020</p>
     </div>
   </footer>
 
@@ -151,6 +405,7 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="node_modules/isotope-layout/dist/isotope.pkgd.js"></script>
   <script src="node_modules/bounce.js/bounce.min.js"></script>
+  <script src="node_modules/rellax/rellax.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>

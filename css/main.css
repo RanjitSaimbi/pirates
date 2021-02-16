@@ -129,29 +129,28 @@ input.transparent-input{
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.rellax-wrapper {
+
+}
+
 .page-heading {
   font-family: aviano-future, sans-serif;
   font-weight: 700;
   font-style: italic;
 }
-.video-container {
+.background-container {
   position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
 }
-.video-container iframe,
-.video-container object,
-.video-container embed {
+.background-container iframe,
+.background-container object,
+.background-container embed {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-
-#buildings .video {
+.background-container .background {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -159,13 +158,19 @@ input.transparent-input{
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-#buildings .container {
+.background-container .sky {
+  z-index: -11;
+  background: rgba(0,0,0,0.5);
+}
+.background-container .city {
+  z-index: -10;
+}
+#stories .container {
   position: relative;
   z-index: 2;
 }
@@ -176,8 +181,7 @@ input.transparent-input{
   margin-bottom: 70px;
 }
 
-.building {
-  background: url(../img/buildings.png);
+.story {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -185,10 +189,21 @@ input.transparent-input{
   width: 220px;
   cursor: pointer;
 }
-.building.active {
+.car {
+  background: url('../img/car-icons.png') no-repeat;
+  width: 250px;
+  height: 250px
+}
+.rocket {
+  background: url('../img/rocket-icons.png') no-repeat;
+  width: 250px;
+  height: 250px
+}
+
+.story.active {
   animation: animation 1600ms linear both;
 }
-.building .name {
+.story .name {
   font-family: aviano-future, sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -198,104 +213,125 @@ input.transparent-input{
   padding-top: 285px;
   margin-bottom: 0;
 }
-.building.active .name {
+.story.active .name {
   padding-top: 210px;
+  color: #ffffff;
 }
-.building .title {
+.story .title {
   font-family: aviano-future, sans-serif;
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 
-audio.story {
+audio.audio {
   display: block;
   margin: 0 auto;
 }
 
-.building-r1b1 {
+.car-r1c1 {
   background-position: 0 0;
-  margin-top: 130px;
 }
-.building-r1b2 {
-  background-position: 0 -220px;
-  margin-top: 10px;
+.car-r1c2 {
+  background-position: -250px 0;
 }
-.building-r1b3 {
-  background-position: 0 -440px;
-  margin-top: 110px;
+.car-r1c3 {
+  background-position: -500px 0;
 }
-.building-r1b4 {
-  background-position: 0 -660px;
-  margin-top: 250px;
+.car-r1c4 {
+  background-position: -750px 0;
 }
-
-.building-r2b1 {
-  background-position: -200px 0;
-  margin-top: 130px;
-}
-.building-r2b2 {
-  background-position: -200px -200px;
-  margin-top: 10px;
-}
-.building-r2b3 {
-  background-position: -200px -400px;
-  margin-top: 110px;
-}
-.building-r2b4 {
-  background-position: -200px -600px;
-  margin-top: 250px;
+.car-r1c5 {
+  background-position: -1000px 0;
 }
 
-.building-r3b1 {
-  background-position: -400px 0;
-  margin-top: 30px;
+.car-r2c1 {
+  background-position: 0 -250px;
 }
-.building-r3b2 {
-  background-position: -400px -200px;
-  margin-top: 10px;
+.car-r2c2 {
+  background-position: -250px -250px;
 }
-.building-r3b3 {
-  background-position: -400px -400px;
-  margin-top: 110px;
+.car-r2c3 {
+  background-position: -500px -250px;
 }
-.building-r3b4 {
-  background-position: -400px -600px;
-  margin-top: 250px;
+.car-r2c4 {
+  background-position: -750px -250px;
 }
-
-.building-r4b1 {
-  background-position: -600px 0;
-  margin-top: 130px;
-}
-.building-r4b2 {
-  background-position: -600px -200px;
-  margin-top: 10px;
-}
-.building-r4b3 {
-  background-position: -600px -400px;
-  margin-top: 110px;
-}
-.building-r4b4 {
-  background-position: -600px -600px;
-  margin-top: 250px;
+.car-r2c5 {
+  background-position: -1000px -250px;
 }
 
-.building-r5b1 {
-  background-position: -800px 0;
-  margin-top: 130px;
+.car-r3c1 {
+  background-position: 0 -500px;
 }
-.building-r5b2 {
-  background-position: -800px -200px;
-  margin-top: 10px;
+.car-r3c2 {
+  background-position: -250px -500px;
 }
-.building-r5b3 {
-  background-position: -800px -400px;
-  margin-top: 110px;
+.car-r3c3 {
+  background-position: -500px -500px;
 }
-.building-r5b6 {
-  background-position: -800px -600px;
-  margin-top: 250px;
+.car-r3c4 {
+  background-position: -750px -500px;
+}
+.car-r3c5 {
+  background-position: -1000px -500px;
+}
+
+.rocket-r1c1 {
+  background-position: 0 0;
+}
+.rocket-r1c2 {
+  background-position: -250px 0;
+}
+.rocket-r1c3 {
+  background-position: -500px 0;
+}
+.rocket-r1c4 {
+  background-position: -750px 0;
+}
+.rocket-r1c5 {
+  background-position: -1000px 0;
+}
+.rocket-r1c6 {
+  background-position: -1250px 0;
+}
+
+.rocket-r2c1 {
+  background-position: 0 -250px;
+}
+.rocket-r2c2 {
+  background-position: -250px -250px;
+}
+.rocket-r2c3 {
+  background-position: -500px -250px;
+}
+.rocket-r2c4 {
+  background-position: -750px -250px;
+}
+.rocket-r2c5 {
+  background-position: -1000px -250px;
+}
+.rocket-r2c6 {
+  background-position: -1250px -250px;
+}
+
+.rocket-r3c1 {
+  background-position: 0 -500px;
+}
+.rocket-r3c2 {
+  background-position: -250px -500px;
+}
+.rocket-r3c3 {
+  background-position: -500px -500px;
+}
+.rocket-r3c4 {
+  background-position: -750px -500px;
+}
+.rocket-r3c5 {
+  background-position: -1000px -500px;
+}
+.rocket-r3c6 {
+  background-position: -1250px -500px;
 }
 
 /* ==========================================================================

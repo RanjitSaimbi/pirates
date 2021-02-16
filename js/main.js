@@ -1,3 +1,4 @@
+// Create a new masonry container.
 let qsRegex;
 const isotopeOptions = {
     itemSelector: '.grid-item',
@@ -56,9 +57,9 @@ document.querySelector('.filter-group').addEventListener( 'click', function( eve
     container.arrange({ filter: filterValue });
 });
 
-
+// Play each audio story.
 function playStory(element, e) {
-    const planetElements = document.getElementsByClassName('building');
+    const planetElements = document.getElementsByClassName('story');
     const audioElements = document.getElementsByTagName('audio');
     const audio = document.getElementById(element);
 
@@ -96,7 +97,7 @@ function playStory(element, e) {
     container.reloadItems()
 }
 
-let elements = document.getElementsByClassName("building");
+let elements = document.getElementsByClassName("story");
 for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener('click', (e) => {
         let el = e.currentTarget.getAttribute('data-action')

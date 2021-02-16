@@ -7,11 +7,12 @@
     "doc": "doc"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.6.0",
     "bounce.js": "^0.8.2",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "rellax": "^1.12.1"
   },
   "devDependencies": {},
   "scripts": {
