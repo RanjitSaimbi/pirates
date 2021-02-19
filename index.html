@@ -16,12 +16,12 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css?v6">
 
+  <link rel="stylesheet" href="css/main.css?v8">
   <style>
-    @import url("https://use.typekit.net/soq1gkl.css");
+    @import url("https://use.typekit.net/zrf5ehr.css");
   </style>
 
   <meta name="theme-color" content="#fafafa">
@@ -40,7 +40,7 @@
         <h1 class="h3 page-heading">Imagining New Worlds</h1>
 
         <a href="http://www.hackneypirates.org/" class="navbar-brand">
-          <img alt="Literacy Pirates" src="/img/lp_logo.png" height="42px" width="auto" class="brand-logo hidden-xs-down">
+          <img alt="Literacy Pirates" src="/img/lp_logo.png" class="brand-logo hidden-xs-down">
         </a>
       </div>
     </div>
@@ -77,11 +77,16 @@
     </div>
 
     <div id="stories" class="container-fluid py-2 text-white background-container">
-      <img src="img/bg_skyline_sm-min.png" alt="Background city" class="background city"/>
+      <object class="background city" data="img/bg_skyline_sm-min.webp" type="image/webp">
+        <img src="img/bg_skyline_sm-min.png" class="background city" alt="Background city"/>
+      </object>
 
       <video autoplay muted loop playsinline poster="img/bg_sky-min.png" class="background sky">
         <source src="img/bg_sky.mp4?v2" type="video/mp4">
-        <img src="img/bg_sky-min.png" alt="Background sky" class="background sky"/>
+
+        <object class="background sky" data="img/bg_sky-min.webp" type="image/webp">
+          <img src="img/bg_sky-min.png" alt="Background sky" class="background sky"/>
+        </object>
       </video>
 
       <div class="flex-grid container">
@@ -1790,8 +1795,8 @@
 
   <!-- Script tags -->
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="node_modules/isotope-layout/dist/isotope.pkgd.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>

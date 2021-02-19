@@ -129,10 +129,6 @@ input.transparent-input{
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.rellax-wrapper {
-
-}
-
 .page-heading {
   font-family: aviano-future, sans-serif;
   font-weight: 700;
@@ -193,7 +189,7 @@ input.transparent-input{
   cursor: pointer;
   color: #ffffff;
   text-decoration: none;
-  text-shadow: 0 0 5px mediumpurple;
+  text-shadow: 0 0 10px mediumpurple;
   -webkit-text-stroke: 1px #454545;
   text-stroke: 1px #454545;
   -webkit-transition: text-shadow 0.2s linear;
@@ -203,7 +199,7 @@ input.transparent-input{
   transition: text-shadow 0.2s linear;
 }
 .story:hover {
-  text-shadow: 0 0 2px purple;
+  text-shadow: 0 0 5px purple;
   -webkit-text-stroke: 1px #000000;
   text-stroke: 1px #000000;
   text-decoration: none;
