@@ -209,12 +209,12 @@ input.transparent-input{
   text-decoration: none;
 }
 .car {
-  background: url('../img/car-icons.png') no-repeat;
+  background: url('../img/car-icons.png?v2') no-repeat;
   width: 250px;
   height: 250px
 }
 .rocket {
-  background: url('../img/rocket-icons.png') no-repeat;
+  background: url('../img/rocket-icons.png?v2') no-repeat;
   width: 250px;
   height: 250px
 }
