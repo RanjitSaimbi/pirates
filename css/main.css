@@ -246,6 +246,7 @@ input.transparent-input{
 audio.audio {
   display: block;
   margin: 0 auto;
+  width: 250px;
 }
 
 .car-r1c1 {
