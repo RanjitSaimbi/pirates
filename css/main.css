@@ -188,9 +188,25 @@ input.transparent-input{
   display: block;
   position: relative;
   margin: 0 auto;
-  height: 300px;
-  width: 220px;
+  height: 370px;
+  width: 250px;
   cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 0 5px mediumpurple;
+  -webkit-text-stroke: 1px #454545;
+  text-stroke: 1px #454545;
+  -webkit-transition: text-shadow 0.2s linear;
+  -moz-transition: text-shadow 0.2s linear;
+  -ms-transition: text-shadow 0.2s linear;
+  -o-transition: text-shadow 0.2s linear;
+  transition: text-shadow 0.2s linear;
+}
+.story:hover {
+  text-shadow: 0 0 2px purple;
+  -webkit-text-stroke: 1px #000000;
+  text-stroke: 1px #000000;
+  text-decoration: none;
 }
 .car {
   background: url('../img/car-icons.png') no-repeat;
@@ -208,22 +224,22 @@ input.transparent-input{
 }
 .story .name {
   font-family: aviano-future, sans-serif;
-  font-weight: 700;
+  font-weight: 1000;
   font-style: italic;
   font-size: 1.333em;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
-  padding-top: 285px;
+  padding-top: 250px;
   margin-bottom: 0;
 }
 .story.active .name {
-  padding-top: 210px;
-  color: #000000;
+  padding-top: 250px;
+  color: #ffffff;
 }
 .story .title {
   font-family: aviano-future, sans-serif;
-  font-weight: 500;
-  color: #000000;
+  font-weight: 1000;
+  color: #ffffff;
   text-align: center;
 }
 
