@@ -178,6 +178,7 @@ input.transparent-input{
   width: 260px;
   padding-bottom: 35px;
   margin-bottom: 70px;
+  float: left;
 }
 
 .story {
