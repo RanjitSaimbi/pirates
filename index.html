@@ -24,9 +24,7 @@
     @import url("https://use.typekit.net/zrf5ehr.css");
   </style>
 
-  <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script defer src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
-  <script defer src="js/plugins.js"></script>
+  <script src="js/vendor/modernizr-min.js"></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -82,12 +80,12 @@
 
     <div id="stories" class="container-fluid py-2 text-white background-container clearfix">
       <object class="background city" data="img/bg_skyline_sm-min.webp" type="image/webp">
-        <img src="img/bg_skyline_sm-min.png" class="background city" alt="Background city"/>
+        <img src="img/bg_skyline_sm-min.png" loading="lazy" alt="Background city" class="background city"/>
       </object>
 
       <video autoplay muted loop playsinline poster="img/bg_sky-min.webp" class="background sky">
         <source src="img/bg_sky.mp4?v2" type="video/mp4">
-        <img src="img/bg_sky-min.webp" alt="Background sky" class="background sky"/>
+        <img src="img/bg_sky-min.webp" loading="lazy" alt="Background sky" class="background sky"/>
       </video>
 
       <div class="flex-grid container">
@@ -1795,8 +1793,10 @@
 
 
   <!-- Script tags -->
-  <script src="js/vendor/modernizr-min.js"></script>
-  <script defer src="js/main.js"></script>
+  <script async src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script async src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+  <script async src="js/plugins.js"></script>
+  <script async src="js/main.js"></script>
 </body>
 
 </html>

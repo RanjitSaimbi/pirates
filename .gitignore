@@ -1,5 +1,6 @@
 # Ignore all node_modules folders.
 node_modules/
+/js/vendor/*
 npm-debug.log
 
 # Exclude project files.

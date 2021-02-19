@@ -9,6 +9,7 @@ gulp.task('modernizr', function() {
         .pipe(modernizr({
             "minify": true,
             "uglify" : true,
+            "enableClasses": true,
             "options": [
                 "domPrefixes",
                 "prefixes",
@@ -18,8 +19,7 @@ gulp.task('modernizr', function() {
                 "testProp"
             ],
             "feature-detects": [
-                "test/img/webp-alpha",
-                "test/img/webp-lossless"
+                "test/img/webp"
             ]
         }))
         .pipe(minify())
